@@ -1,6 +1,6 @@
 def total_salary(path):
     try:
-        with open(path, "r") as info_file:
+        with open(path, "r", encoding="utf-8") as info_file:
             # стартові значення
             quanitty_workers = 0
             sum_sallary = 0
