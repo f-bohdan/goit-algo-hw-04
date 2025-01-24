@@ -7,8 +7,7 @@ def get_cats_info(path):
                 try:
                     characteristics = {}
                     # отримуємо дані з рядка та вносимо в словник
-                    characteristics["id"], characteristics["name"], characteristics["age"] = line.split(',')
-                    characteristics["age"] = int(characteristics["age"].strip())
+                    characteristics["id"], characteristics["name"], characteristics["age"] = line.strip().split(',')
                     # додаємо "котика" до списку
                     cats.append(characteristics)
                 except ValueError:
